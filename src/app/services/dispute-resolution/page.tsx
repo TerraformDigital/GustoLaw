@@ -1,13 +1,12 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export const metadata = {
-  title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes | Gusto Law',
-  description: 'Calgary dispute resolution lawyers for Alberta businesses. Shareholder disputes, contract disputes, mediation, arbitration, and settlement negotiation. Resolve conflicts efficiently.',
-  keywords: 'dispute resolution Calgary, commercial dispute lawyer Alberta, shareholder dispute, contract dispute lawyer, mediation Calgary, arbitration lawyer Alberta, business litigation support',
+  title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes',
+  description: 'Calgary dispute resolution lawyers for commercial and shareholder disputes. Negotiation, mediation, arbitration, and litigation support for Alberta businesses.',
+  keywords: 'dispute resolution Calgary, commercial dispute lawyer, shareholder dispute Alberta, business litigation Calgary, mediation lawyer, arbitration lawyer Alberta',
   openGraph: {
     title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes | Gusto Law',
-    description: 'Calgary dispute resolution lawyers. Shareholder disputes, contract disputes, mediation, arbitration, and settlement negotiation.',
+    description: 'Calgary dispute resolution lawyers for commercial and shareholder disputes. Negotiation, mediation, and arbitration support.',
     url: 'https://gustolaw.ca/services/dispute-resolution',
     siteName: 'Gusto Law',
     locale: 'en_CA',
@@ -16,7 +15,7 @@ export const metadata = {
   twitter: {
     card: 'summary',
     title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes | Gusto Law',
-    description: 'Calgary dispute resolution lawyers. Shareholder disputes, contract disputes, mediation, arbitration.',
+    description: 'Calgary dispute resolution lawyers for commercial and shareholder disputes.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/dispute-resolution' },
 }
@@ -28,10 +27,10 @@ const schemaData = {
       "@type": "LegalService",
       "@id": "https://gustolaw.ca/services/dispute-resolution#service",
       "name": "Dispute Resolution Legal Services",
-      "description": "Comprehensive dispute resolution services for Alberta businesses including shareholder disputes, contract disputes, mediation representation, arbitration representation, and settlement negotiation.",
+      "description": "Dispute resolution services including commercial disputes, shareholder disputes, contract disputes, negotiation, mediation, and arbitration support for Alberta businesses.",
       "provider": { "@type": "LegalService", "@id": "https://gustolaw.ca/#organization" },
       "areaServed": [{ "@type": "City", "name": "Calgary" }, { "@type": "AdministrativeArea", "name": "Alberta" }],
-      "serviceType": ["Commercial Dispute Resolution", "Shareholder Disputes", "Contract Disputes", "Mediation", "Arbitration", "Settlement Negotiation", "Oppression Remedies"],
+      "serviceType": ["Commercial Dispute Resolution", "Shareholder Disputes", "Contract Disputes", "Mediation", "Arbitration", "Negotiation"],
       "url": "https://gustolaw.ca/services/dispute-resolution"
     },
     {
@@ -40,25 +39,21 @@ const schemaData = {
       "name": "Gusto Law",
       "legalName": "Augustine Lu Professional Corporation",
       "url": "https://gustolaw.ca",
-      "logo": "https://gustolaw.ca/images/gusto-law-logo.png",
-      "address": { "@type": "PostalAddress", "streetAddress": "Suite 206, 110 11 Avenue SW", "addressLocality": "Calgary", "addressRegion": "AB", "postalCode": "T2R 0B8", "addressCountry": "CA" },
       "telephone": "+1-403-988-8382",
-      "email": "inquiries@gustolaw.ca"
+      "email": "inquiries@gustolaw.ca",
+      "address": { "@type": "PostalAddress", "streetAddress": "Suite 206, 110 11 Avenue SW", "addressLocality": "Calgary", "addressRegion": "AB", "postalCode": "T2R 0B8", "addressCountry": "CA" }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://gustolaw.ca/services/dispute-resolution#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "What's the difference between mediation and arbitration?", "acceptedAnswer": { "@type": "Answer", "text": "In mediation, a neutral mediator helps parties negotiate a settlement—but the parties control whether to accept any deal. In arbitration, an arbitrator (or panel) hears evidence and arguments, then issues a binding decision. Mediation is collaborative; arbitration is adjudicative." } },
-        { "@type": "Question", "name": "How long do business disputes typically take to resolve?", "acceptedAnswer": { "@type": "Answer", "text": "It varies enormously. A straightforward negotiated settlement might resolve in weeks. Mediation typically adds 1-3 months. Arbitration can take 6-12 months. Court litigation in Alberta often takes 2-4 years to trial. Early, realistic assessment of your position usually leads to faster resolution." } },
-        { "@type": "Question", "name": "What is an oppression remedy?", "acceptedAnswer": { "@type": "Answer", "text": "Under the ABCA and CBCA, minority shareholders can seek relief if the corporation or its directors have acted in a manner that is oppressive, unfairly prejudicial, or unfairly disregards their interests. It's a powerful tool for minority shareholders—courts have wide discretion in crafting remedies, including ordering buyouts." } },
-        { "@type": "Question", "name": "Should I try to resolve the dispute before involving lawyers?", "acceptedAnswer": { "@type": "Answer", "text": "It depends. Early direct communication can sometimes resolve issues quickly. But if there's significant money at stake, complex legal issues, or the relationship is already damaged, early legal advice helps you avoid mistakes—like missing limitation periods or making admissions that hurt your position later." } },
-        { "@type": "Question", "name": "Do you handle court litigation?", "acceptedAnswer": { "@type": "Answer", "text": "We focus on dispute resolution before litigation and work with trusted litigation counsel when court proceedings are necessary. This lets us provide strategic guidance throughout while ensuring you have counsel experienced in courtroom advocacy when needed." } }
+        { "@type": "Question", "name": "What's the difference between mediation and arbitration?", "acceptedAnswer": { "@type": "Answer", "text": "In mediation, a neutral mediator helps parties negotiate a resolution, but can't impose a decision. In arbitration, the arbitrator hears evidence and makes a binding decision. Mediation is collaborative; arbitration is more like private court." }},
+        { "@type": "Question", "name": "How long does commercial dispute resolution typically take?", "acceptedAnswer": { "@type": "Answer", "text": "Negotiated settlements can happen in weeks. Mediation typically takes 1-3 months. Arbitration usually takes 6-12 months. Litigation can take 2-4 years." }},
+        { "@type": "Question", "name": "Should I try to resolve a dispute before involving lawyers?", "acceptedAnswer": { "@type": "Answer", "text": "It depends. Early legal advice can help you understand your position, preserve evidence, and avoid statements that could hurt your case later. We can advise behind the scenes while you continue direct discussions." }},
+        { "@type": "Question", "name": "What if my contract requires arbitration?", "acceptedAnswer": { "@type": "Answer", "text": "Most arbitration clauses are enforceable, meaning you typically must arbitrate rather than litigate. We can help you navigate the arbitration process effectively." }}
       ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://gustolaw.ca/services/dispute-resolution#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gustolaw.ca" },
         { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://gustolaw.ca/services" },
@@ -72,222 +67,184 @@ export default function DisputeResolutionPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
-      <main className="min-h-screen bg-white">
-        {/* Navigation */}
-        <nav className="bg-white border-b border-gray-200">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <Link href="/"><Image src="/images/gusto-law-logo.png" alt="Gusto Law" width={180} height={40} className="h-10 w-auto" /></Link>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/services" className="text-gray-700 hover:text-teal-700 font-medium">Services</Link>
-              <Link href="/team" className="text-gray-600 hover:text-teal-700">Team</Link>
-              <Link href="/about" className="text-gray-600 hover:text-teal-700">About</Link>
-              <Link href="/blog" className="text-gray-600 hover:text-teal-700">Insights</Link>
-              <Link href="/contact" className="bg-teal-700 text-white px-5 py-2 rounded hover:bg-teal-800">Contact</Link>
+
+      {/* Breadcrumb */}
+      <nav className="bg-gray-50 border-b border-gray-200" aria-label="Breadcrumb">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+          <ol className="flex items-center space-x-2 text-sm">
+            <li><Link href="/" className="text-gray-500 hover:text-teal-700">Home</Link></li>
+            <li><span className="text-gray-400 mx-2">/</span></li>
+            <li><Link href="/services" className="text-gray-500 hover:text-teal-700">Services</Link></li>
+            <li><span className="text-gray-400 mx-2">/</span></li>
+            <li><span className="text-gray-900 font-medium">Dispute Resolution</span></li>
+          </ol>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="max-w-3xl">
+            <p className="text-teal-400 font-medium mb-4">Services</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">Dispute Resolution</h1>
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
+              Business disputes are costly—in money, time, and relationships. We help Alberta businesses resolve conflicts efficiently through negotiation, mediation, and when necessary, arbitration or litigation support.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/contact" className="inline-block bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100 text-center">Schedule a Consultation</Link>
+              <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-white/10 text-center">(403) 988-8382</a>
             </div>
           </div>
-        </nav>
+        </div>
+      </section>
 
-        {/* Breadcrumb */}
-        <nav className="bg-gray-50 border-b border-gray-200" aria-label="Breadcrumb">
-          <div className="max-w-7xl mx-auto px-6 py-3">
-            <ol className="flex items-center space-x-2 text-sm">
-              <li><Link href="/" className="text-gray-500 hover:text-teal-700">Home</Link></li>
-              <li><span className="text-gray-400 mx-2">/</span></li>
-              <li><Link href="/services" className="text-gray-500 hover:text-teal-700">Services</Link></li>
-              <li><span className="text-gray-400 mx-2">/</span></li>
-              <li><span className="text-gray-900 font-medium">Dispute Resolution</span></li>
-            </ol>
+      {/* The Cost of Disputes */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Business Disputes Are About More Than Legal Rights</h2>
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">When business relationships break down, the real cost goes beyond legal fees. There's the distraction from running your business, the stress on your team, and often the loss of a relationship that took years to build. Our goal is to help you resolve disputes efficiently and, where possible, preserve important business relationships.</p>
           </div>
-        </nav>
-
-        {/* Hero */}
-        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-20 md:py-28">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="max-w-3xl">
-              <p className="text-teal-400 font-medium mb-4">Services</p>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Dispute Resolution</h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                When business relationships break down, you need strategic guidance to protect your interests while preserving what can be preserved. We help Alberta businesses resolve disputes efficiently—through negotiation, mediation, arbitration, or litigation support.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="inline-block bg-white text-gray-900 px-8 py-4 rounded font-semibold hover:bg-gray-100 text-center">Schedule a Consultation</Link>
-                <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-8 py-4 rounded font-semibold hover:bg-white/10 text-center">(403) 988-8382</a>
+          <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 mt-12">
+            <div className="text-center p-6">
+              <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Time & Distraction</h3>
+              <p className="text-gray-600 text-sm">Every hour spent on disputes is an hour not spent on your business</p>
             </div>
-          </div>
-        </section>
-
-        {/* Approach */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Resolution Over Litigation When Possible</h2>
-              <p className="text-lg text-gray-600 leading-relaxed">Litigation is expensive, unpredictable, and distracting from running your business. Our approach prioritizes early resolution where it makes sense—but we prepare every matter as if it's going to trial. That preparation gives you leverage.</p>
+            <div className="text-center p-6">
+              <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Financial Cost</h3>
+              <p className="text-gray-600 text-sm">Litigation can cost tens or hundreds of thousands of dollars</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Relationship Damage</h3>
+              <p className="text-gray-600 text-sm">Aggressive tactics can permanently damage valuable relationships</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Services Checklist */}
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Dispute Resolution Services</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">From early assessment through resolution</p>
-            </div>
-            <div className="mb-12">
-              <h3 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Pre-Litigation & Advisory</h3>
-              <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
-                {['Commercial Dispute Advisory', 'Demand Letter Preparation', 'Cease & Desist Letters', 'Pre-Litigation Strategy & Risk Assessment', 'Limitation Period Analysis', 'Settlement Negotiation Strategy'].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="mb-12">
-              <h3 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Contract Disputes</h3>
-              <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
-                {['Breach of Contract Claims', 'Contract Interpretation Disputes', 'Termination Disputes', 'Non-Payment & Collection Matters', 'Contract Remediation & Cure Notices'].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="mb-12">
-              <h3 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Corporate & Shareholder Disputes</h3>
-              <div className="grid md:grid-cols-3 gap-x-8 gap-y-3">
-                {['Shareholder Disputes & Deadlock', 'Oppression Remedy Claims (ABCA/CBCA)', 'Derivative Actions', 'Partnership Disputes', 'Buy-Sell Dispute Resolution', 'Forced Buy-Out Negotiations'].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Alternative Dispute Resolution (ADR)</h3>
-              <div className="grid md:grid-cols-2 gap-x-8 gap-y-3">
-                {['Mediation Representation', 'Arbitration Representation', 'Negotiation & Settlement Advisory', 'ADR Clause Drafting'].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
+      {/* Services Checklist */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Dispute Resolution Services</h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">From early intervention to formal proceedings</p>
+          </div>
+
+          <div className="mb-10 sm:mb-12">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Commercial Disputes</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
+              {['Contract Disputes', 'Breach of Contract Claims', 'Payment Disputes', 'Vendor & Supplier Disputes', 'Customer Disputes', 'Service Agreement Disputes', 'Software & Technology Disputes', 'Licensing & Royalty Disputes', 'Construction & Project Disputes'].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span className="text-gray-700 text-sm">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
-        </section>
 
-        {/* Resolution Options */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Resolution Paths</h2>
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="bg-teal-50 rounded-xl p-6 border-2 border-teal-200">
-                <div className="w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold mb-4">1</div>
-                <h3 className="font-bold text-gray-900 mb-2">Negotiation</h3>
-                <p className="text-sm text-gray-600">Direct discussion between parties. Fastest and lowest cost when successful.</p>
-              </div>
-              <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
-                <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mb-4">2</div>
-                <h3 className="font-bold text-gray-900 mb-2">Mediation</h3>
-                <p className="text-sm text-gray-600">Neutral third party facilitates settlement. Parties control the outcome.</p>
-              </div>
-              <div className="bg-amber-50 rounded-xl p-6 border-2 border-amber-200">
-                <div className="w-8 h-8 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold mb-4">3</div>
-                <h3 className="font-bold text-gray-900 mb-2">Arbitration</h3>
-                <p className="text-sm text-gray-600">Private adjudication with binding decision. Faster than court, more formal than mediation.</p>
-              </div>
-              <div className="bg-red-50 rounded-xl p-6 border-2 border-red-200">
-                <div className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold mb-4">4</div>
-                <h3 className="font-bold text-gray-900 mb-2">Litigation Support</h3>
-                <p className="text-sm text-gray-600">Court proceedings when necessary. We work with litigation counsel on complex matters.</p>
-              </div>
+          <div className="mb-10 sm:mb-12">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Shareholder & Partnership Disputes</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
+              {['Shareholder Disputes', 'Shareholder Oppression Claims', 'Derivative Actions', 'Buy-Sell & Valuation Disputes', 'Breach of Shareholder Agreement', 'Director & Officer Disputes', 'Partnership Disputes', 'Joint Venture Disputes', 'Profit Sharing Disputes'].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span className="text-gray-700 text-sm">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
-        </section>
 
-        {/* FAQs - Accordion Style */}
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-3xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              <details className="group bg-white rounded-lg shadow-sm">
-                <summary className="flex items-center justify-between cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">
-                  <span>What's the difference between mediation and arbitration?</span>
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+          <div className="mb-10 sm:mb-12">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Resolution Methods</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
+              {['Direct Negotiation Support', 'Demand Letter Drafting', 'Settlement Agreement Drafting', 'Mediation Representation', 'Mediation Brief Preparation', 'Arbitration Representation', 'Arbitration Brief Preparation', 'Litigation Support & Strategy', 'Expert Witness Coordination'].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span className="text-gray-700 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">Transaction-Related Disputes</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
+              {['M&A Post-Closing Disputes', 'Earnout Disputes', 'Purchase Price Adjustments', 'Indemnification Claims', 'Representation & Warranty Claims', 'Escrow Release Disputes', 'Non-Compete Enforcement', 'Employment-Related Disputes', 'Confidentiality Breach Claims'].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-teal-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span className="text-gray-700 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-10 sm:mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: "What's the difference between mediation and arbitration?", a: "In mediation, a neutral mediator helps parties negotiate a resolution, but can't impose a decision—both sides must agree. In arbitration, the arbitrator hears evidence and arguments, then makes a binding decision. Mediation is collaborative and preserves relationships; arbitration is more like private court but typically faster and less formal than litigation." },
+              { q: "How long does commercial dispute resolution typically take?", a: "It varies widely. Negotiated settlements can happen in weeks. Mediation typically takes 1-3 months from engagement to resolution. Arbitration usually takes 6-12 months. Traditional litigation can take 2-4 years to reach trial. The fastest path depends on both parties' willingness to engage constructively." },
+              { q: "Should I try to resolve a dispute before involving lawyers?", a: "It depends on the situation. Early legal advice can help you understand your position, preserve evidence, and avoid statements that could hurt your case later. We can advise behind the scenes while you continue direct discussions, or take a more active role if needed. The key is getting advice before positions harden." },
+              { q: "What if my contract requires arbitration?", a: "Most arbitration clauses are enforceable, meaning you typically must arbitrate rather than litigate in court. This isn't necessarily bad—arbitration is often faster, more private, and allows for industry-expert decision-makers. We can help you navigate the arbitration process effectively." },
+              { q: "How much does dispute resolution cost?", a: "Costs vary enormously based on complexity and approach. A straightforward negotiated settlement might cost $5,000-$15,000. Mediation typically runs $15,000-$50,000. Arbitration can be $50,000-$200,000+. Litigation often exceeds $100,000 and can reach much higher. Early resolution almost always saves money." }
+            ].map((faq, i) => (
+              <details key={i} className="group bg-gray-50 rounded-lg">
+                <summary className="flex items-center justify-between cursor-pointer p-5 sm:p-6 font-semibold text-gray-900 hover:bg-gray-100 rounded-lg transition-colors">
+                  <span className="pr-4">{faq.q}</span>
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                 </summary>
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed">In mediation, a neutral mediator helps parties negotiate a settlement—but the parties control whether to accept any deal. In arbitration, an arbitrator (or panel) hears evidence and arguments, then issues a binding decision. Mediation is collaborative; arbitration is adjudicative.</div>
+                <div className="px-5 sm:px-6 pb-5 sm:pb-6 text-gray-600 leading-relaxed">{faq.a}</div>
               </details>
-              <details className="group bg-white rounded-lg shadow-sm">
-                <summary className="flex items-center justify-between cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">
-                  <span>How long do business disputes typically take to resolve?</span>
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </summary>
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed">It varies enormously. A straightforward negotiated settlement might resolve in weeks. Mediation typically adds 1-3 months. Arbitration can take 6-12 months. Court litigation in Alberta often takes 2-4 years to trial. Early, realistic assessment of your position usually leads to faster resolution.</div>
-              </details>
-              <details className="group bg-white rounded-lg shadow-sm">
-                <summary className="flex items-center justify-between cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">
-                  <span>What is an oppression remedy?</span>
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </summary>
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed">Under the ABCA and CBCA, minority shareholders can seek relief if the corporation or its directors have acted in a manner that is oppressive, unfairly prejudicial, or unfairly disregards their interests. It's a powerful tool for minority shareholders—courts have wide discretion in crafting remedies, including ordering buyouts.</div>
-              </details>
-              <details className="group bg-white rounded-lg shadow-sm">
-                <summary className="flex items-center justify-between cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">
-                  <span>Should I try to resolve the dispute before involving lawyers?</span>
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </summary>
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed">It depends. Early direct communication can sometimes resolve issues quickly. But if there's significant money at stake, complex legal issues, or the relationship is already damaged, early legal advice helps you avoid mistakes—like missing limitation periods or making admissions that hurt your position later.</div>
-              </details>
-              <details className="group bg-white rounded-lg shadow-sm">
-                <summary className="flex items-center justify-between cursor-pointer p-6 font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition-colors">
-                  <span>Do you handle court litigation?</span>
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </summary>
-                <div className="px-6 pb-6 text-gray-600 leading-relaxed">We focus on dispute resolution before litigation and work with trusted litigation counsel when court proceedings are necessary. This lets us provide strategic guidance throughout while ensuring you have counsel experienced in courtroom advocacy when needed.</div>
-              </details>
-            </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Related Services */}
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Related Services</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Link href="/services/corporate-commercial" className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
-                <h3 className="font-semibold text-gray-900 mb-2">Corporate & Commercial</h3>
-                <p className="text-gray-600 text-sm">Prevent disputes with well-drafted agreements and governance.</p>
-              </Link>
-              <Link href="/services/mergers-acquisitions" className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
-                <h3 className="font-semibold text-gray-900 mb-2">Mergers & Acquisitions</h3>
-                <p className="text-gray-600 text-sm">Post-closing disputes and earnout disagreements.</p>
-              </Link>
-              <Link href="/services/fractional-general-counsel" className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
-                <h3 className="font-semibold text-gray-900 mb-2">Fractional General Counsel</h3>
-                <p className="text-gray-600 text-sm">Ongoing support to manage and prevent disputes.</p>
-              </Link>
-            </div>
+      {/* Related Services */}
+      <section className="py-12 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Related Services</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+            <Link href="/services/corporate-commercial" className="bg-white p-5 sm:p-6 rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
+              <h3 className="font-semibold text-gray-900 mb-2">Corporate & Commercial</h3>
+              <p className="text-gray-600 text-sm">Better contracts and governance to prevent disputes.</p>
+            </Link>
+            <Link href="/services/mergers-acquisitions" className="bg-white p-5 sm:p-6 rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
+              <h3 className="font-semibold text-gray-900 mb-2">Mergers & Acquisitions</h3>
+              <p className="text-gray-600 text-sm">Transaction support including post-closing matters.</p>
+            </Link>
+            <Link href="/services/fractional-general-counsel" className="bg-white p-5 sm:p-6 rounded-lg border border-gray-200 hover:border-teal-300 hover:shadow-md transition-all">
+              <h3 className="font-semibold text-gray-900 mb-2">Fractional General Counsel</h3>
+              <p className="text-gray-600 text-sm">Ongoing support to manage legal risks proactively.</p>
+            </Link>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA */}
-        <section className="py-16 md:py-20 bg-teal-800 text-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-4">Facing a Business Dispute?</h2>
-            <p className="text-xl text-teal-100 mb-8">Early assessment and strategy can make the difference. Let's discuss your situation.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-block bg-white text-teal-800 px-8 py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</Link>
-              <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-8 py-4 rounded font-semibold hover:bg-white/10">Call (403) 988-8382</a>
-            </div>
+      {/* CTA */}
+      <section className="py-12 md:py-20 bg-teal-800 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Facing a Business Dispute?</h2>
+          <p className="text-lg sm:text-xl text-teal-100 mb-8">Early legal advice can make all the difference. Let's discuss your situation and options.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="inline-block bg-white text-teal-800 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</Link>
+            <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-white/10">Call (403) 988-8382</a>
           </div>
-        </section>
-
-      </main>
+        </div>
+      </section>
     </>
   )
 }
