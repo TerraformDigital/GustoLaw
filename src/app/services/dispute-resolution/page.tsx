@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Calgary dispute resolution lawyers for commercial and shareholder disputes. Negotiation, mediation, arbitration, and litigation support for Alberta businesses.',
   keywords: 'dispute resolution Calgary, commercial dispute lawyer, shareholder dispute Alberta, business litigation Calgary, mediation lawyer, arbitration lawyer Alberta',
   openGraph: {
-    title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes | Gusto Law',
+    title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes',
     description: 'Calgary dispute resolution lawyers for commercial and shareholder disputes. Negotiation, mediation, and arbitration support.',
     url: 'https://gustolaw.ca/services/dispute-resolution',
     siteName: 'Gusto Law',
@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes | Gusto Law',
+    title: 'Dispute Resolution Lawyer Calgary | Commercial Disputes',
     description: 'Calgary dispute resolution lawyers for commercial and shareholder disputes.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/dispute-resolution' },

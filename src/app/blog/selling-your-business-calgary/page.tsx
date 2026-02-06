@@ -1,18 +1,18 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Selling Your Business in Calgary: Complete M&A Process Guide | Gusto Law',
+  title: 'Selling Your Business in Calgary: Complete M&A Process Guide',
   description: 'Complete guide to selling your business in Calgary. Learn about M&A valuation, due diligence, purchase agreements, tax considerations, and closing. Expert legal insights for Alberta business owners.',
   keywords: 'selling a business Calgary, M&A lawyer Alberta, sell business Alberta, business sale process, merger and acquisition Alberta',
   openGraph: {
-    title: 'Selling Your Business in Calgary: Complete M&A Process Guide | Gusto Law',
+    title: 'Selling Your Business in Calgary: Complete M&A Process Guide',
     description: 'Complete guide to selling your business in Calgary. Learn about M&A valuation, due diligence, purchase agreements, tax considerations, and closing. Expert legal insights for Alberta business owners.',
     url: 'https://gustolaw.ca/blog/selling-your-business-calgary',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Selling Your Business in Calgary: Complete M&A Process Guide | Gusto Law',
+    title: 'Selling Your Business in Calgary: Complete M&A Process Guide',
     description: 'Complete guide to selling your business in Calgary. Learn about M&A valuation, due diligence, purchase agreements, tax considerations, and closing. Expert legal insights for Alberta business owners.',
   },
   alternates: {

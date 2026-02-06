@@ -165,10 +165,10 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   }
 
   return {
-    title: `${member.name} - ${member.role} | Gusto Law Calgary`,
+    title: `${member.name} - ${member.role}`,
     description: `${member.name} is a ${member.role.toLowerCase()} at Gusto Law. ${member.shortBio}`,
     openGraph: {
-      title: `${member.name} - ${member.role} | Gusto Law Calgary`,
+      title: `${member.name} - ${member.role}`,
       description: `${member.name} is a ${member.role.toLowerCase()} at Gusto Law. ${member.shortBio}`,
       type: 'profile',
       firstName: member.name.split(' ')[0],
@@ -184,7 +184,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${member.name} - ${member.role} | Gusto Law Calgary`,
+      title: `${member.name} - ${member.role}`,
       description: `${member.name} is a ${member.role.toLowerCase()} at Gusto Law. ${member.shortBio}`,
       images: [`https://gustolaw.ca${member.image}`],
     },

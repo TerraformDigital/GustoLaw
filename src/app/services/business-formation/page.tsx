@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Calgary business incorporation and formation lawyers. Alberta & federal incorporation, shareholder agreements, corporate structuring for startups and SMEs.',
   keywords: 'business incorporation Calgary, incorporation lawyer Alberta, incorporate business Calgary, startup lawyer, shareholder agreement, corporate structuring',
   openGraph: {
-    title: 'Business Incorporation Calgary | Formation Lawyer | Gusto Law',
+    title: 'Business Incorporation Calgary | Formation Lawyer',
     description: 'Calgary business incorporation and formation lawyers. Alberta & federal incorporation, shareholder agreements.',
     url: 'https://gustolaw.ca/services/business-formation',
     siteName: 'Gusto Law',
@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Business Incorporation Calgary | Formation Lawyer | Gusto Law',
+    title: 'Business Incorporation Calgary | Formation Lawyer',
     description: 'Calgary business incorporation and formation lawyers.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/business-formation' },

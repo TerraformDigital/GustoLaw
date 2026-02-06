@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Fractional general counsel services for growing Alberta businesses. Executive-level legal leadership, contract management, and strategic advisory without full-time cost.',
   keywords: 'fractional general counsel Calgary, outsourced GC Alberta, part-time general counsel, virtual general counsel Calgary, business lawyer retainer, corporate counsel services',
   openGraph: {
-    title: 'Fractional General Counsel Calgary | Outsourced GC | Gusto Law',
+    title: 'Fractional General Counsel Calgary | Outsourced GC',
     description: 'Fractional general counsel services for growing Alberta businesses. Executive-level legal leadership without full-time cost.',
     url: 'https://gustolaw.ca/services/fractional-general-counsel',
     siteName: 'Gusto Law',
@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Fractional General Counsel Calgary | Outsourced GC | Gusto Law',
+    title: 'Fractional General Counsel Calgary | Outsourced GC',
     description: 'Fractional general counsel services for growing Alberta businesses.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/fractional-general-counsel' },

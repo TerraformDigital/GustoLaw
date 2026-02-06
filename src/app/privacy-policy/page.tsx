@@ -1,17 +1,17 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy | Gusto Law Calgary',
+  title: 'Privacy Policy',
   description: 'Privacy policy for Gusto Law. Learn how we collect, use, and protect your personal information in accordance with Canadian privacy law.',
   openGraph: {
-    title: 'Privacy Policy | Gusto Law Calgary',
+    title: 'Privacy Policy',
     description: 'Privacy policy for Gusto Law. Learn how we collect, use, and protect your personal information in accordance with Canadian privacy law.',
     url: 'https://gustolaw.ca/privacy-policy',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Privacy Policy | Gusto Law Calgary',
+    title: 'Privacy Policy',
     description: 'Privacy policy for Gusto Law. Learn how we collect, use, and protect your personal information in accordance with Canadian privacy law.',
   },
   alternates: {

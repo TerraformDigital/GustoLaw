@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Calgary joint venture lawyers for Alberta businesses. JV agreements, partnership structures, consortium arrangements, and strategic alliance documentation.',
   keywords: 'joint venture lawyer Calgary, JV agreement Alberta, partnership lawyer, consortium agreement, strategic alliance lawyer, collaboration agreement Calgary',
   openGraph: {
-    title: 'Joint Venture Lawyer Calgary | JV Agreements | Gusto Law',
+    title: 'Joint Venture Lawyer Calgary | JV Agreements',
     description: 'Calgary joint venture lawyers for Alberta businesses. JV agreements, partnership structures, and strategic alliances.',
     url: 'https://gustolaw.ca/services/joint-ventures',
     siteName: 'Gusto Law',
@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Joint Venture Lawyer Calgary | JV Agreements | Gusto Law',
+    title: 'Joint Venture Lawyer Calgary | JV Agreements',
     description: 'Calgary joint venture lawyers for Alberta businesses.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/joint-ventures' },

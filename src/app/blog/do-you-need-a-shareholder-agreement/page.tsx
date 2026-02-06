@@ -1,18 +1,18 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Do You Need a Shareholder Agreement? | Gusto Law Calgary',
+  title: 'Do You Need a Shareholder Agreement?',
   description: 'Comprehensive guide to shareholder agreements in Alberta. Learn why they\'re essential, what provisions to include, and how to protect your business interests in Calgary.',
   keywords: 'shareholder agreement Calgary, shareholder agreement Alberta, unanimous shareholder agreement, buy-sell agreement Alberta, corporate governance',
   openGraph: {
-    title: 'Do You Need a Shareholder Agreement? | Gusto Law Calgary',
+    title: 'Do You Need a Shareholder Agreement?',
     description: 'Comprehensive guide to shareholder agreements in Alberta. Learn why they\'re essential, what provisions to include, and how to protect your business interests in Calgary.',
     url: 'https://gustolaw.ca/blog/do-you-need-a-shareholder-agreement',
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Do You Need a Shareholder Agreement? | Gusto Law Calgary',
+    title: 'Do You Need a Shareholder Agreement?',
     description: 'Comprehensive guide to shareholder agreements in Alberta. Learn why they\'re essential, what provisions to include, and how to protect your business interests in Calgary.',
   },
   alternates: {

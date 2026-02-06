@@ -3,11 +3,11 @@ import FAQContent from './FAQContent'
 import { faqCategories } from './faqData'
 
 export const metadata = {
-  title: 'FAQ | Gusto Law',
+  title: 'FAQ',
   description: 'Frequently asked questions about corporate law, M&A, business formation, and more. Calgary lawyers answering your legal questions.',
   keywords: 'business lawyer FAQ Calgary, corporate law FAQ Alberta, M&A questions, legal FAQs, business formation questions',
   openGraph: {
-    title: 'Frequently Asked Questions | Gusto Law',
+    title: 'Frequently Asked Questions',
     description: 'Answers to your corporate law, M&A, and business formation questions.',
     url: 'https://gustolaw.ca/faq',
     siteName: 'Gusto Law',
@@ -16,7 +16,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'FAQ | Gusto Law',
+    title: 'FAQ',
     description: 'Business law FAQs for Calgary and Alberta businesses.',
   },
   alternates: { canonical: 'https://gustolaw.ca/faq' },

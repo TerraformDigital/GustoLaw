@@ -1,18 +1,18 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'About Gusto Law | Calgary Corporate Law Firm',
+  title: 'About Gusto Law',
   description: 'Learn about Gusto Law, a Calgary-based corporate law firm built on a client-first approach. Our experienced lawyers serve businesses across Alberta with practical, results-driven legal counsel.',
   keywords: 'about Gusto Law, Calgary law firm, Alberta corporate lawyers, business law firm Calgary',
   openGraph: {
-    title: 'About Gusto Law | Calgary Corporate Law Firm',
+    title: 'About Gusto Law',
     description: 'Learn about Gusto Law, a Calgary-based corporate law firm built on a client-first approach.',
     url: 'https://gustolaw.ca/about',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'About Gusto Law | Calgary Corporate Law Firm',
+    title: 'About Gusto Law',
     description: 'Learn about Gusto Law, a Calgary-based corporate law firm built on a client-first approach.',
   },
   alternates: {

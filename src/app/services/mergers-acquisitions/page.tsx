@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Calgary M&A lawyers helping Alberta businesses buy, sell, and merge. Due diligence, deal structuring, SPAs, and transaction support. Book a consultation today.',
   keywords: 'M&A lawyer Calgary, mergers acquisitions Alberta, business sale lawyer Calgary, buy-side M&A, sell-side M&A, due diligence lawyer, corporate transaction lawyer Alberta',
   openGraph: {
-    title: 'M&A Lawyer Calgary | Mergers & Acquisitions | Gusto Law',
+    title: 'M&A Lawyer Calgary | Mergers & Acquisitions',
     description: 'Calgary M&A lawyers helping Alberta businesses buy, sell, and merge. Due diligence, deal structuring, SPAs, and transaction support.',
     url: 'https://gustolaw.ca/services/mergers-acquisitions',
     siteName: 'Gusto Law',
@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'M&A Lawyer Calgary | Mergers & Acquisitions | Gusto Law',
+    title: 'M&A Lawyer Calgary | Mergers & Acquisitions',
     description: 'Calgary M&A lawyers helping Alberta businesses buy, sell, and merge.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/mergers-acquisitions' },

@@ -5,14 +5,14 @@ export const metadata = {
   description: 'Corporate and commercial legal services for established Alberta businesses. M&A, fractional general counsel, business formation, and more.',
   keywords: 'corporate legal services Calgary, business lawyer services, M&A lawyer Calgary, contract review services, commercial law Calgary',
   openGraph: {
-    title: 'Legal Services | Gusto Law Calgary',
+    title: 'Legal Services',
     description: 'Corporate and commercial legal services for established Alberta businesses. M&A, fractional general counsel, business formation, and more.',
     url: 'https://gustolaw.ca/services',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Legal Services | Gusto Law Calgary',
+    title: 'Legal Services',
     description: 'Corporate and commercial legal services for established Alberta businesses.',
   },
   alternates: {

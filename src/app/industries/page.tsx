@@ -1,18 +1,18 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Industries We Serve | Gusto Law Calgary',
+  title: 'Industries We Serve',
   description: 'Industry-specific legal services for technology, software, energy, and resources sectors in Calgary and Alberta. Specialized corporate counsel for key business sectors.',
   keywords: 'industry-specific legal services Calgary, technology law firm Alberta, energy law Calgary, SaaS legal services, oil and gas lawyers Calgary',
   openGraph: {
-    title: 'Industries We Serve | Gusto Law Calgary',
+    title: 'Industries We Serve',
     description: 'Industry-specific legal services for technology, software, energy, and resources sectors in Calgary and Alberta. Specialized corporate counsel for key business sectors.',
     url: 'https://gustolaw.ca/industries',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Industries We Serve | Gusto Law Calgary',
+    title: 'Industries We Serve',
     description: 'Industry-specific legal services for technology, software, energy, and resources sectors in Calgary and Alberta.',
   },
   alternates: {

@@ -1,18 +1,18 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Contact Us | Gusto Law Calgary',
+  title: 'Contact Us',
   description: 'Contact Gusto Law in Calgary for corporate law, M&A, business formation, and commercial legal services. Schedule a consultation with our experienced business lawyers.',
   keywords: 'contact Gusto Law, Calgary lawyer consultation, business lawyer Calgary phone, corporate law firm contact',
   openGraph: {
-    title: 'Contact Us | Gusto Law Calgary',
+    title: 'Contact Us',
     description: 'Contact Gusto Law in Calgary for corporate law, M&A, business formation, and commercial legal services.',
     url: 'https://gustolaw.ca/contact',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Contact Us | Gusto Law Calgary',
+    title: 'Contact Us',
     description: 'Contact Gusto Law in Calgary for corporate law and business legal services.',
   },
   alternates: {

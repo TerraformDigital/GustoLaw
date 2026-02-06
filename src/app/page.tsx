@@ -2,18 +2,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Corporate & Business Lawyers in Calgary | Gusto Law',
+  title: 'Corporate & Business Lawyers in Calgary',
   description: 'Calgary corporate law firm providing M&A, business formation, commercial advisory, and fractional general counsel services. Trusted legal counsel for Alberta businesses, startups, and entrepreneurs.',
   keywords: 'corporate lawyer Calgary, business lawyer Calgary, M&A lawyer Alberta, Calgary law firm, business formation Calgary, commercial lawyer Calgary',
   openGraph: {
-    title: 'Corporate & Business Lawyers in Calgary | Gusto Law',
+    title: 'Corporate & Business Lawyers in Calgary',
     description: 'Calgary corporate law firm providing M&A, business formation, commercial advisory, and fractional general counsel services.',
     url: 'https://gustolaw.ca',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Corporate & Business Lawyers in Calgary | Gusto Law',
+    title: 'Corporate & Business Lawyers in Calgary',
     description: 'Calgary corporate law firm providing M&A, business formation, commercial advisory, and fractional general counsel services.',
   },
   alternates: {

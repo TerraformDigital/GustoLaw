@@ -1,18 +1,18 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Legal Insights & Blog | Gusto Law Calgary',
+  title: 'Legal Insights & Blog',
   description: 'Practical legal insights for Alberta business owners. Expert articles on M&A, business formation, corporate governance, shareholder agreements, and more from Gusto Law.',
   keywords: 'Calgary business law blog, Alberta corporate law articles, legal insights Calgary, M&A articles, business formation guides',
   openGraph: {
-    title: 'Legal Insights & Blog | Gusto Law Calgary',
+    title: 'Legal Insights & Blog',
     description: 'Practical legal insights for Alberta business owners from Gusto Law.',
     url: 'https://gustolaw.ca/blog',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image' as const,
-    title: 'Legal Insights & Blog | Gusto Law Calgary',
+    title: 'Legal Insights & Blog',
     description: 'Practical legal insights for Alberta business owners from Gusto Law.',
   },
   alternates: {

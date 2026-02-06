@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Calgary corporate and commercial lawyers. Shareholder agreements, business contracts, corporate governance, and technology agreements for Alberta businesses.',
   keywords: 'corporate lawyer Calgary, commercial lawyer Alberta, shareholder agreement, business contracts Calgary, corporate governance, SaaS agreements',
   openGraph: {
-    title: 'Corporate Lawyer Calgary | Commercial Contracts | Gusto Law',
+    title: 'Corporate Lawyer Calgary | Commercial Contracts',
     description: 'Calgary corporate and commercial lawyers. Shareholder agreements, business contracts, corporate governance.',
     url: 'https://gustolaw.ca/services/corporate-commercial',
     siteName: 'Gusto Law',
@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Corporate Lawyer Calgary | Commercial Contracts | Gusto Law',
+    title: 'Corporate Lawyer Calgary | Commercial Contracts',
     description: 'Calgary corporate and commercial lawyers.',
   },
   alternates: { canonical: 'https://gustolaw.ca/services/corporate-commercial' },
