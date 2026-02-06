@@ -56,8 +56,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[600px] bg-teal-900 pt-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-end">
-          <div className="pb-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-16 grid md:grid-cols-2 gap-12 items-end">
+          <div className="py-16">
             <p className="text-teal-300 font-medium mb-4 tracking-wide uppercase text-sm">Calgary Corporate Law</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
               Legal Insight.<br />Business Instincts.
@@ -80,14 +80,13 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="hidden md:flex justify-center items-end">
+          <div className="hidden md:block">
             <Image
               src="/images/team/gus-lu.png"
               alt="Gus Lu - Founder of Gusto Law"
               width={420}
               height={560}
-              className="relative object-cover object-top"
-              style={{ marginBottom: '-4px' }}
+              className="w-full max-w-md ml-auto block"
               priority
             />
           </div>
