@@ -45,15 +45,44 @@ export const blogPost = defineType({
       to: [{ type: 'teamMember' }],
     }),
     defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+      description: 'Optional subtitle shown below the title',
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published Date',
       type: 'datetime',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'readTime',
+      title: 'Read Time',
+      type: 'string',
+      description: 'Estimated reading time, e.g. "12 min read"',
+    }),
+    defineField({
       name: 'content',
       title: 'Content',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'faqItems',
+      title: 'FAQ Items',
+      type: 'array',
+      of: [{
+        type: 'object',
+        name: 'faqItem',
+        fields: [
+          { name: 'question', title: 'Question', type: 'string', validation: (Rule: any) => Rule.required() },
+          { name: 'answer', title: 'Answer', type: 'text', rows: 4, validation: (Rule: any) => Rule.required() },
+        ],
+        preview: {
+          select: { title: 'question' },
+        },
+      }],
+      description: 'FAQ items for structured data / FAQ schema markup',
     }),
     defineField({
       name: 'categories',
@@ -69,9 +98,19 @@ export const blogPost = defineType({
           { title: 'Oil & Gas', value: 'oil-gas' },
           { title: 'Dispute Resolution', value: 'dispute-resolution' },
           { title: 'General Counsel', value: 'general-counsel' },
+          { title: 'Intellectual Property', value: 'intellectual-property' },
+          { title: 'Privacy & Compliance', value: 'privacy-compliance' },
           { title: 'Business Tips', value: 'business-tips' },
         ],
       },
+    }),
+    defineField({
+      name: 'relatedPosts',
+      title: 'Related Posts',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'blogPost' }] }],
+      description: 'Related blog posts shown at the bottom of the article',
+      validation: (Rule) => Rule.max(3),
     }),
     defineField({
       name: 'relatedServices',

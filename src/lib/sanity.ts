@@ -37,3 +37,96 @@ export async function sanityFetch<T>({
     },
   })
 }
+
+// ============================================================
+// Blog GROQ Queries
+// ============================================================
+
+// Category label mapping
+export const categoryLabels: Record<string, string> = {
+  'business-formation': 'Business Formation',
+  'corporate-commercial': 'Corporate & Commercial',
+  'mergers-acquisitions': 'Mergers & Acquisitions',
+  'technology-law': 'Technology Law',
+  'oil-gas': 'Oil & Gas',
+  'dispute-resolution': 'Dispute Resolution',
+  'general-counsel': 'General Counsel',
+  'intellectual-property': 'Intellectual Property',
+  'privacy-compliance': 'Privacy & Compliance',
+  'business-tips': 'Business Tips',
+}
+
+// Fields shared across blog queries
+const blogPostFields = `
+  _id,
+  title,
+  subtitle,
+  "slug": slug.current,
+  excerpt,
+  featuredImage,
+  publishedAt,
+  readTime,
+  categories,
+  "author": author->{name, "slug": slug.current, photo},
+  seo
+`
+
+// All blog posts for the listing page (no content body needed)
+export const allPostsQuery = `*[_type == "blogPost"] | order(publishedAt desc) {
+  ${blogPostFields}
+}`
+
+// Single blog post by slug (full content)
+export const postBySlugQuery = `*[_type == "blogPost" && slug.current == $slug][0] {
+  ${blogPostFields},
+  content,
+  faqItems,
+  "relatedPosts": relatedPosts[]->{
+    _id,
+    title,
+    "slug": slug.current,
+    excerpt,
+    categories,
+    featuredImage
+  }
+}`
+
+// All slugs for generateStaticParams
+export const postSlugsQuery = `*[_type == "blogPost" && defined(slug.current)]{"slug": slug.current}`
+
+// ============================================================
+// TypeScript Types
+// ============================================================
+
+export interface SanityBlogPost {
+  _id: string
+  title: string
+  subtitle?: string
+  slug: string
+  excerpt?: string
+  featuredImage?: SanityImageSource & { alt?: string }
+  publishedAt: string
+  readTime?: string
+  categories?: string[]
+  author?: {
+    name: string
+    slug: string
+    photo?: SanityImageSource
+  }
+  seo?: {
+    metaTitle?: string
+    metaDescription?: string
+    ogImage?: SanityImageSource
+    noIndex?: boolean
+  }
+  content?: any[]
+  faqItems?: { question: string; answer: string }[]
+  relatedPosts?: {
+    _id: string
+    title: string
+    slug: string
+    excerpt?: string
+    categories?: string[]
+    featuredImage?: SanityImageSource
+  }[]
+}
