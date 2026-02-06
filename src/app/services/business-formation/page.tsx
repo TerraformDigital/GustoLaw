@@ -11,6 +11,12 @@ export const metadata = {
     siteName: 'Gusto Law',
     locale: 'en_CA',
     type: 'website',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2022/01/Business-Formation-scaled.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Business Incorporation Calgary | Formation Lawyer',
+    }],
   },
   twitter: {
     card: 'summary',

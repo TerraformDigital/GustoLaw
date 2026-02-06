@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Understanding Software Licensing Agreements: A Legal Guide for Canadian Businesses',
     description: 'Comprehensive guide to software licensing agreements for Canadian businesses. Learn about EULA, SaaS, open source licenses, and legal compliance.',
     url: 'https://gustolaw.ca/blog/software-licensing-agreements-guide',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/04/Types-of-Software-Licensing-Models.png',
+      width: 1200,
+      height: 630,
+      alt: 'Understanding Software Licensing Agreements: A Legal Guide for Canadian Businesses',
+    }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Fractional General Counsel Calgary | Part-Time Legal Leadership',
     description: 'Discover how fractional general counsel services provide executive-level legal guidance for growing Alberta businesses. Cost-effective alternative to full-time in-house lawyers.',
     url: 'https://gustolaw.ca/blog/fractional-general-counsel-calgary',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2022/01/General-Counsel-scaled.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Fractional General Counsel Calgary | Part-Time Legal Leadership',
+    }],
   },
   twitter: {
     card: 'summary_large_image' as const,

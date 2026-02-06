@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Outsourcing vs. In-House Legal Counsel: What\'s Best for Your Oil & Gas Business?',
     description: 'Explore the pros and cons of outsourced vs. in-house legal counsel for oil and gas companies. Learn how to choose the right legal strategy for your business.',
     url: 'https://gustolaw.ca/blog/outsourcing-vs-inhouse-legal-counsel-oil-gas',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2022/01/Oil-and-Gas-Lawyer-scaled.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Outsourcing vs. In-House Legal Counsel: What\'s Best for Your Oil & Gas Business?',
+    }],
   },
   twitter: {
     card: 'summary_large_image',

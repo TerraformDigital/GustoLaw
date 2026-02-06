@@ -11,6 +11,12 @@ export const metadata = {
     siteName: 'Gusto Law',
     locale: 'en_CA',
     type: 'website',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/01/Calgary-Software-Lawyer.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Technology Lawyer Calgary | SaaS & Software Legal Services | Gusto Law',
+    }],
   },
   twitter: {
     card: 'summary',

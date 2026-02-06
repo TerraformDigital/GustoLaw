@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Business Law Basics: Why Your Lawyer Recommends a Holding Company and Separate Share Classes',
     description: 'Comprehensive guide to holding companies and share classes in Canada. Learn about tax deferral, creditor protection, and succession planning for Alberta businesses.',
     url: 'https://gustolaw.ca/blog/holding-company-share-classes-canada',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/06/Holding-Company-and-Separate-Share-Classes.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Business Law Basics: Why Your Lawyer Recommends a Holding Company and Separate Share Classes',
+    }],
   },
   twitter: {
     card: 'summary_large_image' as const,

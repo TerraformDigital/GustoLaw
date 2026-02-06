@@ -11,6 +11,12 @@ export const metadata = {
     siteName: 'Gusto Law',
     locale: 'en_CA',
     type: 'website',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2022/01/joint-ventures-strategic-partnerships-scaled.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Joint Venture Lawyer Calgary | JV Agreements',
+    }],
   },
   twitter: {
     card: 'summary',

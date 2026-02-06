@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Intellectual Property Basics Every Canadian Business Owner Should Know',
     description: 'Comprehensive guide to intellectual property protection in Canada. Learn about copyrights, patents, trademarks, and trade secrets for your business in Alberta.',
     url: 'https://gustolaw.ca/blog/intellectual-property-basics-canadian-business',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/07/Intellectual-Property-Basics.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Intellectual Property Basics Every Canadian Business Owner Should Know',
+    }],
   },
   twitter: {
     card: 'summary_large_image' as const,

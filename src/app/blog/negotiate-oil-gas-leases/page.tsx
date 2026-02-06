@@ -8,7 +8,15 @@ export const metadata = {
     title: 'How to Negotiate Oil & Gas Leases',
     description: 'Learn how to negotiate favorable oil and gas leases in Alberta. Understand bonus payments, royalties, and protect your landowner rights.',
     url: 'https://gustolaw.ca/blog/negotiate-oil-gas-leases',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/05/Negotiate-Oil-Gas-Leases.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'How to Negotiate Oil & Gas Leases',
+    }],
   },
   twitter: {
     card: 'summary_large_image',

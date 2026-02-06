@@ -8,7 +8,15 @@ export const metadata = {
     title: '7 Must-Have Elements in Your SaaS Agreement for Canadian Businesses',
     description: 'Discover the 7 critical elements every SaaS agreement needs to protect your Canadian business, from SLAs to data privacy and liability limitations.',
     url: 'https://gustolaw.ca/blog/saas-agreement-must-have-elements',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/01/7-must-have-elements-in-SaaS-contract.jpg',
+      width: 1200,
+      height: 630,
+      alt: '7 Must-Have Elements in Your SaaS Agreement for Canadian Businesses',
+    }],
   },
   twitter: {
     card: 'summary_large_image',

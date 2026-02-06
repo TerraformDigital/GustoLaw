@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Intro to Canadian Privacy Law: An Essential Guide for Alberta Businesses',
     description: 'Comprehensive guide to Canadian privacy law for Alberta businesses. Learn about PIPEDA, Alberta PIPA, data privacy compliance, and data breach notification requirements in Calgary.',
     url: 'https://gustolaw.ca/blog/canadian-privacy-law-guide',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/08/Workplace-Privacy-Critical-Considerations-for-Alberta-Employers.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Intro to Canadian Privacy Law: An Essential Guide for Alberta Businesses',
+    }],
   },
   twitter: {
     card: 'summary_large_image' as const,

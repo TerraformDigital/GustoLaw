@@ -8,7 +8,15 @@ export const metadata = {
     title: 'SaaS Agreements: A Framework for Success',
     description: 'Learn the complete framework for SaaS agreements—from master agreements to privacy policies. Master the legal structure that protects your SaaS business.',
     url: 'https://gustolaw.ca/blog/saas-agreements-framework-success',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2024/11/SaaS-Agreements-scaled.jpeg',
+      width: 1200,
+      height: 630,
+      alt: 'SaaS Agreements: A Framework for Success',
+    }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Reseller and Distributor Software Licensing: What Software Companies Need to Know',
     description: 'Guide to structuring reseller and distributor software licensing agreements. Understand channel partnerships, pricing, and compliance requirements in Canada.',
     url: 'https://gustolaw.ca/blog/reseller-distributor-software-licensing',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2025/01/Calgary-Software-Lawyer.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Reseller and Distributor Software Licensing: What Software Companies Need to Know',
+    }],
   },
   twitter: {
     card: 'summary_large_image',

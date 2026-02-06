@@ -8,7 +8,15 @@ export const metadata = {
     title: 'Alberta vs. Federal Incorporation: Which Is Right for Your Business?',
     description: 'Compare Alberta provincial incorporation (ABCA) vs. federal incorporation (CBCA) in Canada. Learn costs, benefits, tax implications, and how to decide which structure is best for your Calgary business.',
     url: 'https://gustolaw.ca/blog/alberta-vs-federal-incorporation',
+    siteName: 'Gusto Law',
+    locale: 'en_CA',
     type: 'article',
+    images: [{
+      url: 'https://gustolaw.ca/wp-content/uploads/2022/01/Business-Formation-scaled.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Alberta vs. Federal Incorporation: Which Is Right for Your Business?',
+    }],
   },
   twitter: {
     card: 'summary_large_image' as const,
