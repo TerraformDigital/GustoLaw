@@ -24,10 +24,10 @@ export default function TeamPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <Image 
-                src="/images/team/gus-lu.png" 
-                alt="Gus Lu - Founder of Gusto Law" 
-                width={500} 
+              <Image
+                src="/images/team/gus-lu.png"
+                alt="Gus Lu - Founder of Gusto Law"
+                width={500}
                 height={600}
                 className="rounded-lg shadow-lg w-full"
               />
@@ -39,8 +39,10 @@ export default function TeamPage() {
             </div>
             <div>
               <p className="text-teal-700 font-medium mb-2">Founder</p>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Gus Lu</h2>
-              
+              <Link href="/team/gus-lu" className="block hover:text-teal-700 transition-colors">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4 hover:text-teal-700 transition-colors">Gus Lu</h2>
+              </Link>
+
               <div className="prose prose-lg text-gray-600 mb-8">
                 <p>
                   Gus is the founder of Gusto Law. He has served as general counsel for U.S. and Canada-based private equity portfolio companies, and formerly practiced in the areas of securities and mergers & acquisitions law at a top-ranked national firm.
@@ -71,6 +73,13 @@ export default function TeamPage() {
                   </ul>
                 </div>
               </div>
+
+              <Link
+                href="/team/gus-lu"
+                className="inline-block bg-teal-700 text-white px-6 py-2 rounded font-medium hover:bg-teal-800 transition-colors"
+              >
+                View Full Profile
+              </Link>
             </div>
           </div>
         </div>
@@ -81,10 +90,10 @@ export default function TeamPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="md:order-2">
-              <Image 
-                src="/images/team/tyler-anthony-1.jpg" 
-                alt="Tyler Anthony - Lawyer at Gusto Law" 
-                width={500} 
+              <Image
+                src="/images/team/tyler-anthony-1.jpg"
+                alt="Tyler Anthony - Lawyer at Gusto Law"
+                width={500}
                 height={600}
                 className="rounded-lg shadow-lg w-full"
               />
@@ -96,8 +105,10 @@ export default function TeamPage() {
             </div>
             <div className="md:order-1">
               <p className="text-teal-700 font-medium mb-2">Associate</p>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Tyler Anthony</h2>
-              
+              <Link href="/team/tyler-anthony" className="block hover:text-teal-700 transition-colors">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4 hover:text-teal-700 transition-colors">Tyler Anthony</h2>
+              </Link>
+
               <div className="prose prose-lg text-gray-600 mb-8">
                 <p>
                   Tyler is a business-minded lawyer who provides practical and strategic legal support to emerging companies, entrepreneurs, and investors. He advises clients across a range of sectors, including technology, software, SaaS, real estate, and professional services.
@@ -125,6 +136,13 @@ export default function TeamPage() {
                   </ul>
                 </div>
               </div>
+
+              <Link
+                href="/team/tyler-anthony"
+                className="inline-block bg-teal-700 text-white px-6 py-2 rounded font-medium hover:bg-teal-800 transition-colors"
+              >
+                View Full Profile
+              </Link>
             </div>
           </div>
         </div>
@@ -137,8 +155,8 @@ export default function TeamPage() {
           <p className="text-xl text-teal-100 mb-8">
             Schedule a consultation to discuss your business needs.
           </p>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="inline-block bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors"
           >
             Schedule a Consultation

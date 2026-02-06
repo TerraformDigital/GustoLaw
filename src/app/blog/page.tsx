@@ -11,7 +11,7 @@ const posts = [
     excerpt: 'You have spent years building your company. Here is what the sale process actually looks like—from initial preparation through closing day.',
     category: 'Mergers & Acquisitions',
     date: 'January 2026',
-    readTime: '10 min read',
+    readTime: '12 min read',
     href: '/blog/selling-your-business-calgary',
   },
   {
@@ -19,7 +19,7 @@ const posts = [
     excerpt: 'Executive-level legal strategy without the executive-level salary. How growing Alberta businesses are getting sophisticated legal guidance on a flexible basis.',
     category: 'Business Strategy',
     date: 'January 2026',
-    readTime: '8 min read',
+    readTime: '10 min read',
     href: '/blog/fractional-general-counsel-calgary',
   },
   {
@@ -27,7 +27,7 @@ const posts = [
     excerpt: 'One of the first decisions when incorporating in Canada is whether to incorporate provincially or federally. Here is how to decide.',
     category: 'Business Formation',
     date: 'January 2026',
-    readTime: '7 min read',
+    readTime: '9 min read',
     href: '/blog/alberta-vs-federal-incorporation',
   },
   {
@@ -35,7 +35,7 @@ const posts = [
     excerpt: 'If your corporation has more than one shareholder, a shareholder agreement is not optional—it is essential protection for everyone involved.',
     category: 'Corporate Governance',
     date: 'January 2026',
-    readTime: '6 min read',
+    readTime: '10 min read',
     href: '/blog/do-you-need-a-shareholder-agreement',
   },
 ]
