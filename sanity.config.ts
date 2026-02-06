@@ -9,9 +9,10 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'
 export default defineConfig({
   name: 'gusto-law',
   title: 'Gusto Law',
-  
+
   projectId,
   dataset,
+  basePath: '/studio',
   
   plugins: [
     structureTool({
