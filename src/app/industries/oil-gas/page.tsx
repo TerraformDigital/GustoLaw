@@ -71,7 +71,7 @@ export default function OilGasPage() {
 
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200" aria-label="Breadcrumb">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-3">
           <ol className="flex items-center space-x-2 text-sm">
             <li><Link href="/" className="text-gray-500 hover:text-teal-700">Home</Link></li>
             <li><span className="text-gray-400 mx-2">/</span></li>

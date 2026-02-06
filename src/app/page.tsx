@@ -1,9 +1,58 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+export const metadata = {
+  title: 'Corporate & Business Lawyers in Calgary | Gusto Law',
+  description: 'Calgary corporate law firm providing M&A, business formation, commercial advisory, and fractional general counsel services. Trusted legal counsel for Alberta businesses, startups, and entrepreneurs.',
+  keywords: 'corporate lawyer Calgary, business lawyer Calgary, M&A lawyer Alberta, Calgary law firm, business formation Calgary, commercial lawyer Calgary',
+  openGraph: {
+    title: 'Corporate & Business Lawyers in Calgary | Gusto Law',
+    description: 'Calgary corporate law firm providing M&A, business formation, commercial advisory, and fractional general counsel services.',
+    url: 'https://gustolaw.ca',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image' as const,
+    title: 'Corporate & Business Lawyers in Calgary | Gusto Law',
+    description: 'Calgary corporate law firm providing M&A, business formation, commercial advisory, and fractional general counsel services.',
+  },
+  alternates: {
+    canonical: 'https://gustolaw.ca',
+  },
+}
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LegalService',
+            name: 'Gusto Law',
+            url: 'https://gustolaw.ca',
+            telephone: '+1-403-IT-GUSTO',
+            description: 'Calgary corporate law firm specializing in M&A, business formation, corporate commercial law, and fractional general counsel services for Alberta businesses.',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Calgary',
+              addressRegion: 'Alberta',
+              addressCountry: 'CA',
+            },
+            areaServed: {
+              '@type': 'Province',
+              name: 'Alberta',
+            },
+            priceRange: '$$',
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '5.0',
+              reviewCount: '24',
+            },
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center bg-teal-900 pt-28">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900"></div>

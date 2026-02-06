@@ -3,7 +3,22 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Our Team | Gusto Law Calgary',
-  description: 'Meet the lawyers at Gusto Law. Experienced corporate counsel serving Calgary and Alberta businesses.',
+  description: 'Meet the lawyers at Gusto Law. Experienced corporate counsel serving Calgary and Alberta businesses with M&A, business formation, and commercial advisory services.',
+  keywords: 'Gusto Law lawyers, Calgary corporate lawyers, Alberta business lawyers, Gus Lu lawyer, Tyler Anthony lawyer',
+  openGraph: {
+    title: 'Our Team | Gusto Law Calgary',
+    description: 'Meet the lawyers at Gusto Law. Experienced corporate counsel serving Calgary and Alberta businesses.',
+    url: 'https://gustolaw.ca/team',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image' as const,
+    title: 'Our Team | Gusto Law Calgary',
+    description: 'Meet the lawyers at Gusto Law. Experienced corporate counsel serving Calgary and Alberta businesses.',
+  },
+  alternates: {
+    canonical: 'https://gustolaw.ca/team',
+  },
 }
 
 export default function TeamPage() {

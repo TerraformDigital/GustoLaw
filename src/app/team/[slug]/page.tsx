@@ -242,7 +242,7 @@ export default function TeamMemberPage({ params }: { params: { slug: string } })
 
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-2 text-sm">
+        <div className="max-w-6xl mx-auto px-6 pt-28 pb-4 flex items-center gap-2 text-sm">
           <Link href="/" className="text-teal-700 hover:text-teal-800 font-medium">
             Home
           </Link>

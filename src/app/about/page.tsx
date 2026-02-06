@@ -1,8 +1,23 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'About Gusto Law | Calgary Corporate Lawyers',
-  description: 'Learn about Gusto Law, a boutique corporate law firm serving established businesses in Calgary and Alberta.',
+  title: 'About Gusto Law | Calgary Corporate Law Firm',
+  description: 'Learn about Gusto Law, a Calgary-based corporate law firm built on a client-first approach. Our experienced lawyers serve businesses across Alberta with practical, results-driven legal counsel.',
+  keywords: 'about Gusto Law, Calgary law firm, Alberta corporate lawyers, business law firm Calgary',
+  openGraph: {
+    title: 'About Gusto Law | Calgary Corporate Law Firm',
+    description: 'Learn about Gusto Law, a Calgary-based corporate law firm built on a client-first approach.',
+    url: 'https://gustolaw.ca/about',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image' as const,
+    title: 'About Gusto Law | Calgary Corporate Law Firm',
+    description: 'Learn about Gusto Law, a Calgary-based corporate law firm built on a client-first approach.',
+  },
+  alternates: {
+    canonical: 'https://gustolaw.ca/about',
+  },
 }
 
 export default function AboutPage() {
@@ -79,12 +94,21 @@ export default function AboutPage() {
           <p className="text-xl text-teal-100 mb-8">
             Let us discuss how we can support your business goals.
           </p>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="inline-block bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors"
           >
             Schedule a Consultation
           </Link>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-8 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-xs text-gray-500 text-center">
+            This content is for informational purposes only and does not constitute legal advice. For legal guidance tailored to your situation, please consult a qualified lawyer.
+          </p>
         </div>
       </section>
     </>

@@ -70,7 +70,7 @@ export default function JointVenturesPage() {
 
       {/* Breadcrumb */}
       <nav className="bg-gray-50 border-b border-gray-200" aria-label="Breadcrumb">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-3">
           <ol className="flex items-center space-x-2 text-sm">
             <li><Link href="/" className="text-gray-500 hover:text-teal-700">Home</Link></li>
             <li><span className="text-gray-400 mx-2">/</span></li>
@@ -230,6 +230,15 @@ export default function JointVenturesPage() {
             <Link href="/contact" className="inline-block bg-white text-teal-800 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</Link>
             <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-white/10">Call (403) 988-8382</a>
           </div>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-8 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-xs text-gray-500 text-center">
+            This content is for informational purposes only and does not constitute legal advice. For legal guidance tailored to your situation, please consult a qualified lawyer.
+          </p>
         </div>
       </section>
     </>

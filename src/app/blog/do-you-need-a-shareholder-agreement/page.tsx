@@ -4,9 +4,19 @@ export const metadata = {
   title: 'Do You Need a Shareholder Agreement? | Gusto Law Calgary',
   description: 'Comprehensive guide to shareholder agreements in Alberta. Learn why they\'re essential, what provisions to include, and how to protect your business interests in Calgary.',
   keywords: 'shareholder agreement Calgary, shareholder agreement Alberta, unanimous shareholder agreement, buy-sell agreement Alberta, corporate governance',
-  og: {
-    title: 'Do You Need a Shareholder Agreement?',
-    description: 'Learn why shareholder agreements are essential for Alberta corporations and what provisions you need to protect your business.',
+  openGraph: {
+    title: 'Do You Need a Shareholder Agreement? | Gusto Law Calgary',
+    description: 'Comprehensive guide to shareholder agreements in Alberta. Learn why they\'re essential, what provisions to include, and how to protect your business interests in Calgary.',
+    url: 'https://gustolaw.ca/blog/do-you-need-a-shareholder-agreement',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image' as const,
+    title: 'Do You Need a Shareholder Agreement? | Gusto Law Calgary',
+    description: 'Comprehensive guide to shareholder agreements in Alberta. Learn why they\'re essential, what provisions to include, and how to protect your business interests in Calgary.',
+  },
+  alternates: {
+    canonical: 'https://gustolaw.ca/blog/do-you-need-a-shareholder-agreement',
   },
 }
 
