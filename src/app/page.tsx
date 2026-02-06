@@ -54,10 +54,10 @@ export default function Home() {
         }}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-center bg-teal-900 pt-28">
+      <section className="relative min-h-[600px] bg-teal-900 pt-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-end">
+          <div className="pb-12">
             <p className="text-teal-300 font-medium mb-4 tracking-wide uppercase text-sm">Calgary Corporate Law</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
               Legal Insight.<br />Business Instincts.
@@ -66,32 +66,30 @@ export default function Home() {
               Strategic legal counsel for established businesses navigating growth, transactions, and complex commercial matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors text-center"
               >
                 Schedule a Consultation
               </Link>
-              <Link 
-                href="/services" 
+              <Link
+                href="/services"
                 className="border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white/10 transition-colors text-center"
               >
                 Our Services
               </Link>
             </div>
           </div>
-          <div className="hidden md:flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-teal-500/20 rounded-full blur-2xl"></div>
-              <Image 
-                src="/images/team/gus-lu.png" 
-                alt="Gus Lu - Founder of Gusto Law" 
-                width={400} 
-                height={500}
-                className="relative rounded-lg shadow-2xl"
-                priority
-              />
-            </div>
+          <div className="hidden md:flex justify-center items-end">
+            <Image
+              src="/images/team/gus-lu.png"
+              alt="Gus Lu - Founder of Gusto Law"
+              width={420}
+              height={560}
+              className="relative object-cover object-top"
+              style={{ marginBottom: '-4px' }}
+              priority
+            />
           </div>
         </div>
       </section>

@@ -256,23 +256,24 @@ export default function TeamMemberPage({ params }: { params: { slug: string } })
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white overflow-hidden">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-end">
             {/* Image */}
-            <div>
+            <div className="flex items-end justify-center pt-12">
               <Image
                 src={member.image}
                 alt={member.name}
                 width={500}
                 height={600}
-                className="rounded-lg shadow-2xl w-full"
+                className="w-full max-w-md object-cover object-top"
+                style={{ marginBottom: '-4px' }}
                 priority
               />
             </div>
 
             {/* Info */}
-            <div>
+            <div className="py-16 md:py-24">
               <p className="text-teal-300 font-semibold text-lg mb-2">{member.role}</p>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{member.name}</h1>
               <p className="text-lg text-gray-200 mb-8 leading-relaxed">

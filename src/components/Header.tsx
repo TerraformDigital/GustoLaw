@@ -1,16 +1,67 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+const services = [
+  { name: 'Mergers & Acquisitions', href: '/services/mergers-acquisitions' },
+  { name: 'Fractional General Counsel', href: '/services/fractional-general-counsel' },
+  { name: 'Business Formation', href: '/services/business-formation' },
+  { name: 'Corporate & Commercial', href: '/services/corporate-commercial' },
+  { name: 'Dispute Resolution', href: '/services/dispute-resolution' },
+  { name: 'Joint Ventures', href: '/services/joint-ventures' },
+]
+
+const industries = [
+  { name: 'Technology & Software', href: '/industries/technology' },
+  { name: 'Oil & Gas', href: '/industries/oil-gas' },
+]
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const [industriesOpen, setIndustriesOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false)
+  const servicesRef = useRef<HTMLDivElement>(null)
+  const industriesRef = useRef<HTMLDivElement>(null)
+  const servicesTimeout = useRef<NodeJS.Timeout | null>(null)
+  const industriesTimeout = useRef<NodeJS.Timeout | null>(null)
+
+  // Close dropdowns on outside click
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+        setServicesOpen(false)
+      }
+      if (industriesRef.current && !industriesRef.current.contains(e.target as Node)) {
+        setIndustriesOpen(false)
+      }
+    }
+    document.addEventListener('click', handleClick)
+    return () => document.removeEventListener('click', handleClick)
+  }, [])
+
+  const handleServicesEnter = () => {
+    if (servicesTimeout.current) clearTimeout(servicesTimeout.current)
+    setServicesOpen(true)
+  }
+  const handleServicesLeave = () => {
+    servicesTimeout.current = setTimeout(() => setServicesOpen(false), 150)
+  }
+  const handleIndustriesEnter = () => {
+    if (industriesTimeout.current) clearTimeout(industriesTimeout.current)
+    setIndustriesOpen(true)
+  }
+  const handleIndustriesLeave = () => {
+    industriesTimeout.current = setTimeout(() => setIndustriesOpen(false), 150)
+  }
 
   return (
     <nav className="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-        {/* Logo - responsive sizing */}
+        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logos/gusto-law-logo.svg"
@@ -23,10 +74,81 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link href="/services" className="text-gray-700 hover:text-teal-700 font-medium transition-colors">
-            Services
-          </Link>
+        <div className="hidden lg:flex items-center gap-7">
+          {/* Services Dropdown */}
+          <div
+            ref={servicesRef}
+            className="relative"
+            onMouseEnter={handleServicesEnter}
+            onMouseLeave={handleServicesLeave}
+          >
+            <Link
+              href="/services"
+              className="flex items-center gap-1 text-gray-700 hover:text-teal-700 font-medium transition-colors"
+            >
+              Services
+              <svg className="w-3.5 h-3.5 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </Link>
+            {servicesOpen && (
+              <div className="absolute top-full left-0 pt-2 -ml-2">
+                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[240px]">
+                  {services.map((service) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                  <div className="border-t border-gray-100 mt-1 pt-1">
+                    <Link
+                      href="/services"
+                      className="block px-4 py-2.5 text-sm text-teal-700 font-medium hover:bg-teal-50 transition-colors"
+                    >
+                      View All Services
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Industries Dropdown */}
+          <div
+            ref={industriesRef}
+            className="relative"
+            onMouseEnter={handleIndustriesEnter}
+            onMouseLeave={handleIndustriesLeave}
+          >
+            <Link
+              href="/industries"
+              className="flex items-center gap-1 text-gray-700 hover:text-teal-700 transition-colors"
+            >
+              Industries
+              <svg className="w-3.5 h-3.5 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </Link>
+            {industriesOpen && (
+              <div className="absolute top-full left-0 pt-2 -ml-2">
+                <div className="bg-white rounded-lg shadow-lg border border-gray-100 py-2 min-w-[220px]">
+                  {industries.map((industry) => (
+                    <Link
+                      key={industry.href}
+                      href={industry.href}
+                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
+                    >
+                      {industry.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
           <Link href="/team" className="text-gray-700 hover:text-teal-700 transition-colors">
             Team
           </Link>
@@ -36,29 +158,30 @@ export default function Header() {
           <Link href="/blog" className="text-gray-700 hover:text-teal-700 transition-colors">
             Insights
           </Link>
+          <Link href="/faq" className="text-gray-700 hover:text-teal-700 transition-colors">
+            FAQ
+          </Link>
           <Link
             href="/contact"
-            className="bg-teal-700 text-white px-5 py-2.5 rounded hover:bg-teal-800 transition-colors"
+            className="bg-teal-700 text-white px-5 py-2.5 rounded hover:bg-teal-800 transition-colors font-medium"
           >
             Contact
           </Link>
         </div>
 
-        {/* Mobile Hamburger Button */}
+        {/* Mobile Hamburger */}
         <button
           type="button"
-          className="md:hidden p-2 rounded-md text-gray-700 hover:text-teal-700 hover:bg-gray-100 transition-colors"
+          className="lg:hidden p-2 rounded-md text-gray-700 hover:text-teal-700 hover:bg-gray-100 transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-expanded={mobileMenuOpen}
           aria-label="Toggle navigation menu"
         >
           {mobileMenuOpen ? (
-            // X icon when menu is open
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           ) : (
-            // Hamburger icon when menu is closed
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -68,18 +191,78 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
-          mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${
+          mobileMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-4 py-4 space-y-1 bg-white border-t border-gray-100">
-          <Link
-            href="/services"
-            className="block px-4 py-3 text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-lg font-medium transition-colors"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Services
-          </Link>
+          {/* Services Accordion */}
+          <div>
+            <button
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+              className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+            >
+              Services
+              <svg
+                className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {mobileServicesOpen && (
+              <div className="pl-4 space-y-1">
+                {services.map((service) => (
+                  <Link
+                    key={service.href}
+                    href={service.href}
+                    className="block px-4 py-2.5 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+                <Link
+                  href="/services"
+                  className="block px-4 py-2.5 text-sm text-teal-700 font-medium hover:bg-teal-50 rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  View All Services
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Industries Accordion */}
+          <div>
+            <button
+              onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)}
+              className="flex items-center justify-between w-full px-4 py-3 text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-lg transition-colors"
+            >
+              Industries
+              <svg
+                className={`w-4 h-4 transition-transform ${mobileIndustriesOpen ? 'rotate-180' : ''}`}
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {mobileIndustriesOpen && (
+              <div className="pl-4 space-y-1">
+                {industries.map((industry) => (
+                  <Link
+                    key={industry.href}
+                    href={industry.href}
+                    className="block px-4 py-2.5 text-sm text-gray-600 hover:text-teal-700 hover:bg-gray-50 rounded-lg transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {industry.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <Link
             href="/team"
             className="block px-4 py-3 text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-lg transition-colors"
@@ -101,6 +284,13 @@ export default function Header() {
           >
             Insights
           </Link>
+          <Link
+            href="/faq"
+            className="block px-4 py-3 text-gray-700 hover:text-teal-700 hover:bg-gray-50 rounded-lg transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            FAQ
+          </Link>
           <div className="pt-2">
             <Link
               href="/contact"
@@ -110,7 +300,6 @@ export default function Header() {
               Contact Us
             </Link>
           </div>
-          {/* Phone number for mobile */}
           <div className="pt-2 pb-1">
             <a
               href="tel:4039888382"

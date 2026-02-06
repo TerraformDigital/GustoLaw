@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,7 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Gusto Law</h3>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/images/logos/gusto-law-logo.svg"
+                alt="Gusto Law"
+                width={140}
+                height={42}
+                className="h-9 w-auto brightness-0 invert"
+              />
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Corporate counsel for established Alberta businesses.
             </p>
@@ -60,8 +69,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/faq" className="hover:text-white transition-colors">
+                  FAQ
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
