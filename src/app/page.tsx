@@ -228,7 +228,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-lg text-white">
               <h3 className="text-xl font-semibold mb-3">Energy & Resources</h3>
               <p className="text-gray-300 mb-4">Oil & gas transactions, joint ventures, regulatory compliance, and infrastructure projects.</p>
-              <Link href="/industries/energy" className="text-white font-medium hover:underline">Learn more →</Link>
+              <Link href="/industries/oil-gas" className="text-white font-medium hover:underline">Learn more →</Link>
             </div>
           </div>
         </div>
