@@ -6,7 +6,7 @@ export const metadata = {
   keywords: 'selling a business Calgary, M&A lawyer Alberta, sell business Alberta, business sale process, merger and acquisition Alberta',
 }
 
-export const structuredData = {
+const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Selling Your Business: What to Expect in the M&A Process',
@@ -21,7 +21,7 @@ export const structuredData = {
   image: 'https://gustolaw.ca/blog/selling-business.jpg',
 }
 
-export const faqSchema = {
+const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
