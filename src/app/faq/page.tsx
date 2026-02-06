@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import FAQContent, { faqCategories } from './FAQContent'
+import FAQContent from './FAQContent'
+import { faqCategories } from './faqData'
 
 export const metadata = {
   title: 'FAQ | Gusto Law',
