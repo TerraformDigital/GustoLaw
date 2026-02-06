@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import LayoutWrapper from '@/components/LayoutWrapper'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -54,17 +53,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <Header />
-        <main className="pt-16 sm:pt-18 md:pt-20">
-          {children}
-        </main>
-        <Footer />
-        
-        {/* Elfsight Google Reviews - Floating Widget */}
-        <div 
-          className="elfsight-app-8aef0216-0f5f-4bc1-b830-2b0b367e556c" 
-          data-elfsight-app-lazy
-        />
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   )
