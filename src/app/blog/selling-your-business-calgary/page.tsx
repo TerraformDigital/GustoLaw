@@ -327,7 +327,7 @@ export default function SellingYourBusinessPost() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Sell Your Business?</h2>
           <p className="text-teal-100 mb-8 text-lg">Let our M&A experts guide you through every step of the process.</p>
-          <Link href="/contact" className="inline-block bg-white text-teal-800 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors">Schedule Your Consultation</Link>
+          <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-teal-800 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors">Schedule Your Consultation</a>
         </div>
       </section>
     </>

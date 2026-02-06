@@ -96,12 +96,14 @@ export default function ServicesPage() {
           <p className="text-xl text-gray-600 mb-8">
             Schedule a consultation and we will help identify the right legal support for your business.
           </p>
-          <Link 
-            href="/contact" 
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-700 text-white px-8 py-4 rounded font-medium hover:bg-teal-800 transition-colors"
           >
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
     </>

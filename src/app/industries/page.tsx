@@ -94,12 +94,14 @@ export default function IndustriesPage() {
           <p className="text-xl text-teal-100 mb-8">
             Let's discuss how our industry expertise can support your business objectives.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors"
           >
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
     </>

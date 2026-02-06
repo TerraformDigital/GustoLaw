@@ -278,12 +278,14 @@ export default function HoldingCompanyPost() {
           <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
             Gusto Law works with Calgary and Alberta business owners to implement strategic holding company structures, establish multi-class share classes, and develop tax-efficient business models.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-800 text-white px-8 py-4 rounded font-medium hover:bg-teal-900 transition-colors shadow-md hover:shadow-lg"
           >
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
     </>

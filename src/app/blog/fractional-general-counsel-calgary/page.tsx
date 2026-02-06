@@ -299,7 +299,7 @@ export default function FractionalGCPost() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Get Strategic Legal Guidance?</h2>
           <p className="text-teal-100 mb-8 text-lg">Discover whether fractional general counsel is right for your Alberta business.</p>
-          <Link href="/contact" className="inline-block bg-white text-teal-700 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors">Schedule a Consultation</Link>
+          <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-teal-700 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors">Schedule a Consultation</a>
         </div>
       </section>
     </>

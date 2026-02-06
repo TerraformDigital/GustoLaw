@@ -277,12 +277,14 @@ export default function IntellectualPropertyPost() {
           <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
             Gusto Law helps Calgary and Alberta businesses identify, protect, and maximize the value of their intellectual property through strategic registration and enforcement.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-800 text-white px-8 py-4 rounded font-medium hover:bg-teal-900 transition-colors shadow-md hover:shadow-lg"
           >
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
     </>

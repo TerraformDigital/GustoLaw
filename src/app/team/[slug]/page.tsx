@@ -282,12 +282,14 @@ export default function TeamMemberPage({ params }: { params: { slug: string } })
 
               {/* CTA */}
               <div className="flex gap-4">
-                <Link
-                  href="/contact"
+                <a
+                  href="https://calendly.com/guslu-gustolaw/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded font-medium transition-colors"
                 >
                   Schedule Consultation
-                </Link>
+                </a>
                 <Link
                   href="/team"
                   className="inline-block bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded font-medium transition-colors"
@@ -393,12 +395,14 @@ export default function TeamMemberPage({ params }: { params: { slug: string } })
           <p className="text-xl text-teal-100 mb-8">
             Schedule a consultation with {member.name.split(' ')[0]} to discuss your business needs and legal strategy.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors"
           >
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
 

@@ -220,12 +220,14 @@ export default function SoftwareLicensingAgreementsGuide() {
           <p className="mb-6 text-teal-100">
             Our technology lawyers help Canadian businesses navigate software licensing, develop compliant licensing agreements, and manage intellectual property. Contact Gusto Law to discuss your licensing strategy.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-500 hover:bg-teal-400 text-white font-medium px-6 py-3 rounded transition"
           >
             Contact Our Team
-          </Link>
+          </a>
         </div>
       </section>
 

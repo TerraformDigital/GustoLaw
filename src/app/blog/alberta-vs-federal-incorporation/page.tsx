@@ -266,7 +266,7 @@ export default function AlbertaVsFederalPost() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Need Help Incorporating Your Business?</h2>
           <p className="text-gray-700 mb-6">Our corporate law team at Gusto Law can guide you through the incorporation process and help you make the right choice for your Calgary business.</p>
-          <Link href="/contact" className="inline-block bg-teal-800 text-white px-8 py-4 rounded font-medium hover:bg-teal-900 transition-colors">Schedule a Consultation</Link>
+          <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-teal-800 text-white px-8 py-4 rounded font-medium hover:bg-teal-900 transition-colors">Schedule a Consultation</a>
         </div>
       </section>
 

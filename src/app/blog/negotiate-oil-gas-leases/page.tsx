@@ -226,12 +226,14 @@ export default function NegotiateOilGasLeases() {
           <p className="mb-6 text-teal-100">
             Our petroleum lawyers have extensive experience advising landowners on mineral lease negotiations. Contact Gusto Law to discuss your lease and ensure you receive fair terms.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-500 hover:bg-teal-400 text-white font-medium px-6 py-3 rounded transition"
           >
             Contact Our Team
-          </Link>
+          </a>
         </div>
       </section>
 

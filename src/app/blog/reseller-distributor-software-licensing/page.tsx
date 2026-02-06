@@ -231,12 +231,14 @@ export default function ResellerDistributorSoftwareLicensing() {
           <p className="mb-6 text-teal-100">
             Our technology and business lawyers help software companies structure reseller and distributor agreements that protect your interests while supporting channel growth. Contact Gusto Law to discuss your channel strategy.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://calendly.com/guslu-gustolaw/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-500 hover:bg-teal-400 text-white font-medium px-6 py-3 rounded transition"
           >
             Contact Our Team
-          </Link>
+          </a>
         </div>
       </section>
 

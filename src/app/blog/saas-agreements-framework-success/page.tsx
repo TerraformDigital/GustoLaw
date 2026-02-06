@@ -279,9 +279,9 @@ export default function SaaSFramework() {
           <p className="text-teal-100 mb-8 text-lg">
             Let Gusto Law help you create a comprehensive agreement framework that protects your IP, ensures compliance, and supports your growth.
           </p>
-          <Link href="/contact" className="inline-block bg-white text-teal-900 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition">
+          <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-teal-900 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition">
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
 

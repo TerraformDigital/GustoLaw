@@ -66,12 +66,14 @@ export default function Home() {
               Strategic legal counsel for established businesses navigating growth, transactions, and complex commercial matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
+              <a
+                href="https://calendly.com/guslu-gustolaw/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors text-center"
               >
                 Schedule a Consultation
-              </Link>
+              </a>
               <Link
                 href="/services"
                 className="border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white/10 transition-colors text-center"
@@ -242,12 +244,14 @@ export default function Home() {
             Schedule a consultation to explore how we can support your company's growth and transactions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/contact" 
+            <a
+              href="https://calendly.com/guslu-gustolaw/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-teal-900 px-8 py-4 rounded font-medium hover:bg-gray-100 transition-colors"
             >
               Schedule a Consultation
-            </Link>
+            </a>
             <a 
               href="tel:+14039888382" 
               className="border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white/10 transition-colors"

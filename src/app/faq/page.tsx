@@ -131,7 +131,7 @@ export default function FAQPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Didn't find your answer?</h2>
           <p className="text-lg sm:text-xl text-teal-100 mb-8">Let's discuss your specific legal needs and how we can help your business succeed.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-block bg-white text-teal-800 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</Link>
+            <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-teal-800 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</a>
             <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-white/10">Call (403) 988-8382</a>
           </div>
         </div>

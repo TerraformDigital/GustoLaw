@@ -92,7 +92,7 @@ export default function OilGasPage() {
               Strategic legal counsel for Alberta's oil and gas companies. From joint ventures and regulatory compliance to transactions and commercial agreements, we provide sophisticated counsel to energy sector operators navigating complex regulatory, commercial, and environmental landscapes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="inline-block bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100 text-center">Schedule a Consultation</Link>
+              <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100 text-center">Schedule a Consultation</a>
               <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-white/10 text-center">(403) 988-8382</a>
             </div>
           </div>
@@ -290,7 +290,7 @@ export default function OilGasPage() {
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Discuss Your Energy Project?</h2>
           <p className="text-lg sm:text-xl text-teal-100 mb-8">Whether you're structuring a joint venture, navigating AER approvals, or planning an asset transaction, our Calgary energy lawyers are ready to advise.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-block bg-white text-teal-800 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</Link>
+            <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-teal-800 px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-gray-100">Schedule a Consultation</a>
             <a href="tel:4039888382" className="inline-block border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold hover:bg-white/10">Call (403) 988-8382</a>
           </div>
         </div>

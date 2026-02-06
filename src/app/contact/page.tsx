@@ -76,64 +76,44 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+            {/* Book a Consultation */}
+            <div className="bg-gradient-to-br from-teal-800 to-teal-900 p-8 md:p-10 rounded-lg text-white">
+              <h2 className="text-2xl font-bold mb-4">Book a Consultation</h2>
+              <p className="text-teal-100 mb-6 leading-relaxed">
+                The best way to get started is to book a 30-minute consultation directly with Gus.
+                We will discuss your situation, answer your questions, and outline how we can help.
+              </p>
+              <div className="bg-white/10 rounded-lg p-6 mb-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <svg className="w-6 h-6 text-teal-300 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                    <input 
-                      type="text" 
-                      id="firstName" 
-                      name="firstName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                    <input 
-                      type="text" 
-                      id="lastName" 
-                      name="lastName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                    />
+                    <p className="font-semibold">30-Minute Consultation</p>
+                    <p className="text-teal-200 text-sm">$250 + GST</p>
                   </div>
                 </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  />
+                <div className="flex items-start gap-4">
+                  <svg className="w-6 h-6 text-teal-300 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold">Virtual or In-Person</p>
+                    <p className="text-teal-200 text-sm">Video call or at our Calgary office</p>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">How can we help?</label>
-                  <textarea 
-                    id="message" 
-                    name="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-teal-700 text-white py-4 rounded-lg font-semibold hover:bg-teal-800 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              </div>
+              <a
+                href="https://calendly.com/guslu-gustolaw/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-white text-teal-900 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center text-lg"
+              >
+                Book Your Consultation
+              </a>
+              <p className="text-teal-300 text-sm mt-4 text-center">
+                Choose a time that works for you on our calendar
+              </p>
             </div>
           </div>
         </div>

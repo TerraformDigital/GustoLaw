@@ -261,9 +261,9 @@ export default function SaaSSeven() {
           <p className="text-teal-100 mb-8 text-lg">
             Gusto Law specializes in technology contracts. We'll help you understand your obligations, negotiate better terms, and ensure your SaaS agreements protect your interests.
           </p>
-          <Link href="/contact" className="inline-block bg-white text-teal-900 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition">
+          <a href="https://calendly.com/guslu-gustolaw/30min" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-teal-900 px-8 py-3 rounded-lg font-semibold hover:bg-teal-50 transition">
             Schedule a Consultation
-          </Link>
+          </a>
         </div>
       </section>
 
