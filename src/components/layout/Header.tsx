@@ -25,7 +25,7 @@ const navigation = [
     name: 'Industries',
     href: '/industries',
     children: [
-      { name: 'Technology & Software', href: '/industries/technology-software' },
+      { name: 'Technology & Software', href: '/industries/technology' },
       { name: 'Oil & Gas', href: '/industries/oil-gas' },
     ],
   },
