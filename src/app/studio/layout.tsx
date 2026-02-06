@@ -9,8 +9,15 @@ export default function StudioLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body style={{ margin: 0 }}>{children}</body>
-    </html>
+    <>
+      <style>{`
+        header { display: none !important; }
+        footer { display: none !important; }
+        main { padding: 0 !important; margin: 0 !important; }
+        .elfsight-app-8aef0216-0f5f-4bc1-b830-2b0b367e556c { display: none !important; }
+        [data-elfsight-app-lazy] { display: none !important; }
+      `}</style>
+      {children}
+    </>
   )
 }
