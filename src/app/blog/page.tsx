@@ -28,6 +28,7 @@ const posts = [
     date: 'January 2026',
     readTime: '12 min read',
     href: '/blog/selling-your-business-calgary',
+    image: 'https://gustolaw.ca/wp-content/uploads/2022/01/corporate-lawyer-scaled.jpg',
   },
   {
     title: 'What Is a Fractional General Counsel—And Does Your Business Need One?',
@@ -36,6 +37,7 @@ const posts = [
     date: 'January 2026',
     readTime: '10 min read',
     href: '/blog/fractional-general-counsel-calgary',
+    image: 'https://gustolaw.ca/wp-content/uploads/2022/01/General-Counsel-scaled.jpg',
   },
   {
     title: 'Alberta vs. Federal Incorporation: Which Is Right for Your Business?',
@@ -44,6 +46,7 @@ const posts = [
     date: 'January 2026',
     readTime: '9 min read',
     href: '/blog/alberta-vs-federal-incorporation',
+    image: 'https://gustolaw.ca/wp-content/uploads/2022/01/Business-Formation-scaled.jpg',
   },
   {
     title: 'Do You Need a Shareholder Agreement?',
@@ -52,6 +55,7 @@ const posts = [
     date: 'January 2026',
     readTime: '10 min read',
     href: '/blog/do-you-need-a-shareholder-agreement',
+    image: 'https://gustolaw.ca/wp-content/uploads/2022/01/corporate-lawyer-scaled.jpg',
   },
   {
     title: 'Intro to Canadian Privacy Law: An Essential Guide for Alberta Businesses',
@@ -60,6 +64,7 @@ const posts = [
     date: 'August 2025',
     readTime: '14 min read',
     href: '/blog/canadian-privacy-law-guide',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/08/Workplace-Privacy-Critical-Considerations-for-Alberta-Employers.jpg',
   },
   {
     title: 'Intellectual Property Basics Every Canadian Business Owner Should Know',
@@ -68,6 +73,7 @@ const posts = [
     date: 'July 2025',
     readTime: '12 min read',
     href: '/blog/intellectual-property-basics-canadian-business',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/07/Intellectual-Property-Basics.jpg',
   },
   {
     title: 'Why Your Lawyer Recommends a Holding Company and Separate Share Classes',
@@ -76,6 +82,7 @@ const posts = [
     date: 'June 2025',
     readTime: '11 min read',
     href: '/blog/holding-company-share-classes-canada',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/06/Holding-Company-and-Separate-Share-Classes.jpg',
   },
   {
     title: 'How to Negotiate Oil & Gas Leases',
@@ -84,6 +91,7 @@ const posts = [
     date: 'May 2025',
     readTime: '11 min read',
     href: '/blog/negotiate-oil-gas-leases',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/05/Negotiate-Oil-Gas-Leases.jpg',
   },
   {
     title: 'Understanding Software Licensing Agreements: A Legal Guide for Canadian Businesses',
@@ -92,6 +100,7 @@ const posts = [
     date: 'April 2025',
     readTime: '13 min read',
     href: '/blog/software-licensing-agreements-guide',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/04/Types-of-Software-Licensing-Models.png',
   },
   {
     title: 'Reseller and Distributor Software Licensing: What Software Companies Need to Know',
@@ -100,6 +109,7 @@ const posts = [
     date: 'March 2025',
     readTime: '12 min read',
     href: '/blog/reseller-distributor-software-licensing',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/01/Calgary-Software-Lawyer.jpg',
   },
   {
     title: 'Outsourcing vs. In-House Legal Counsel: What\'s Best for Your Oil & Gas Business?',
@@ -108,6 +118,7 @@ const posts = [
     date: 'March 2025',
     readTime: '10 min read',
     href: '/blog/outsourcing-vs-inhouse-legal-counsel-oil-gas',
+    image: 'https://gustolaw.ca/wp-content/uploads/2022/01/Oil-and-Gas-Lawyer-scaled.jpg',
   },
   {
     title: '7 Must-Have Elements in Your SaaS Agreement for Canadian Businesses',
@@ -116,6 +127,7 @@ const posts = [
     date: 'February 2025',
     readTime: '14 min read',
     href: '/blog/saas-agreement-must-have-elements',
+    image: 'https://gustolaw.ca/wp-content/uploads/2025/01/7-must-have-elements-in-SaaS-contract.jpg',
   },
   {
     title: 'SaaS Agreements: A Framework for Success',
@@ -124,6 +136,7 @@ const posts = [
     date: 'January 2025',
     readTime: '11 min read',
     href: '/blog/saas-agreements-framework-success',
+    image: 'https://gustolaw.ca/wp-content/uploads/2024/11/SaaS-Agreements-scaled.jpeg',
   },
 ]
 
@@ -146,6 +159,14 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {posts.map((post) => (
               <article key={post.href} className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="h-48 bg-gray-100 overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="p-8">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="text-teal-700 font-medium text-sm">{post.category}</span>

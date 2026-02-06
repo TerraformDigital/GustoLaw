@@ -82,8 +82,9 @@ export default function JointVenturesPage() {
       </nav>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-luminosity" style={{ backgroundImage: "url('https://gustolaw.ca/wp-content/uploads/2022/01/joint-ventures-strategic-partnerships-scaled.jpg')" }} />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl">
             <p className="text-teal-400 font-medium mb-4">Services</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">Joint Ventures</h1>

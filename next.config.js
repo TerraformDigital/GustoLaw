@@ -6,6 +6,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'gustolaw.ca',
+        pathname: '/wp-content/uploads/**',
+      },
     ],
   },
   async redirects() {

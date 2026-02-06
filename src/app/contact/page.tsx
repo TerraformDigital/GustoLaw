@@ -24,8 +24,9 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <header className="bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900 pt-32 pb-16 md:pb-24">
-        <div className="max-w-4xl mx-auto px-6">
+      <header className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900 pt-32 pb-16 md:pb-24 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-luminosity" style={{ backgroundImage: "url('/images/calgary-downtown.jpg')" }} />
+        <div className="relative max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Contact Us</h1>
           <p className="text-xl text-teal-100">
             Ready to discuss your business needs? Get in touch with our team.

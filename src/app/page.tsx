@@ -56,6 +56,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[600px] bg-teal-900 pt-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900"></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-luminosity" style={{ backgroundImage: "url('https://gustolaw.ca/wp-content/uploads/2021/12/home-hero-background.jpg')" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-16 grid md:grid-cols-2 gap-12 items-end">
           <div className="py-16">
             <p className="text-teal-300 font-medium mb-4 tracking-wide uppercase text-sm">Calgary Corporate Law</p>

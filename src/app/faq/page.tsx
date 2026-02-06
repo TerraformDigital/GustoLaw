@@ -78,8 +78,9 @@ export default function FAQPage() {
       </nav>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-teal-900 text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-luminosity" style={{ backgroundImage: "url('/images/calgary-park.jpg')" }} />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">Frequently Asked Questions</h1>
             <p className="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">

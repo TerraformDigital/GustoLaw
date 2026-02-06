@@ -24,8 +24,9 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <header className="bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900 pt-32 pb-16 md:pb-24">
-        <div className="max-w-4xl mx-auto px-6">
+      <header className="relative bg-gradient-to-br from-teal-900 via-teal-800 to-gray-900 pt-32 pb-16 md:pb-24 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-luminosity" style={{ backgroundImage: "url('/images/calgary-skyline.jpg')" }} />
+        <div className="relative max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About Gusto Law</h1>
           <p className="text-xl text-teal-100">
             A boutique corporate law firm serving established businesses in Calgary and Alberta.
