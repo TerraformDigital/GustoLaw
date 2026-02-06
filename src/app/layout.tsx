@@ -30,11 +30,12 @@ export const metadata: Metadata = {
     locale: 'en_CA',
     url: 'https://gustolaw.ca',
     siteName: 'Gusto Law',
-    images: [{ url: '/og-default.png', width: 1200, height: 630, alt: 'Gusto Law - Corporate & Business Lawyers in Calgary' }],
+    images: [{ url: 'https://gustolaw.ca/wp-content/uploads/2022/01/Gusto-Law-OG.jpg', width: 1200, height: 630, alt: 'Gusto Law - Corporate & Business Lawyers in Calgary' }],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@GustoLaw',
+    images: ['https://gustolaw.ca/wp-content/uploads/2022/01/Gusto-Law-OG.jpg'],
   },
 }
 
